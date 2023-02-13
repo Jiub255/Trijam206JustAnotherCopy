@@ -116,6 +116,11 @@ public class GameManager : MonoBehaviour
                 EndRound();
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     private void EndRound()
